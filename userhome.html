@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="resources/logo.png" class="logo">
+        <div class="right-nav">
+            <a href="index.html">Home</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="userinfo">
+                <img src="resources/profile.png">
+                <p>
+                    Sanskar Singhal
+                    <br>
+                    Experience - NA
+                    <br>
+                    SDE
+                </p>
+            </div>
+
+            <div class="logout">
+                <a href="login.html">Logout</a>
+            </div>
+        </section>
+
+        <section class="info-tabs-container">
+            <div class="info-tabs">
+                <div class="info-tab active" onclick="showTab('personal')">Personal Information</div>
+                <div class="info-tab" onclick="showTab('skills')">Technical Skills</div>
+                <div class="info-tab" onclick="showTab('contact')">Contact Information</div>
+            </div>
+            <div class="info-content" id="info-content">
+                <p><strong>Name:</strong> Sanskar Singhal</p>
+                <p><strong>Designation:</strong> SDE</p>
+                <p><strong>Experience:</strong> NA</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const content = {
+            personal: `<p><strong>Name:</strong> Sanskar Singhal</p>
+                       <p><strong>Designation:</strong> SDE</p>
+                       <p><strong>Experience:</strong> NA</p>`,
+            skills:  `<p><strong>Languages:</strong> HTML, CSS, JavaScript</p>
+                      <p><strong>Frameworks:</strong> Spring</p>
+                      <p><strong>Tools:</strong> VS Code, Git</p>`,
+            contact: `<p><strong>Email:</strong> sanskar.singhal@cginfinity.com</p>
+                      <p><strong>Phone:</strong> 9x2x2xx3x2</p>
+                      <p><strong>Location:</strong> India</p>`
+        };
+
+        function showTab(key) {
+            document.getElementById('info-content').innerHTML = content[key];
+            document.querySelectorAll('.info-tab').forEach(t => t.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+    <footer class ="footer">
+        <p>Established in 1998. Headquarters at Texas, Dallas.</p>
+    </footer>
+</body>
+</html>

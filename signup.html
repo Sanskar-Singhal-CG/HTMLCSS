@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="resources/logo.png" class="logo">
+        <div class="right-nav">
+            <a href="login.html">Login</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+    <main class="signup">
+        <section>
+            <h1>Signup Page</h1>
+            Please Enter Your Registration Details
+            <br><br>
+            <form action="login.html" class="signupform">
+                
+                <input id="name" name="name" type="text" placeholder="Enter your name">
+                <input name="email" type="email" placeholder="john@gmail.com">
+                
+                <select id="Gender" name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input id="experience" name="experience" type="number" placeholder="Enter your experience in years">
+
+                <input id="password" name="password" type="password" placeholder="Enter your password">
+                <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm your password">
+
+                <input id="contact" name="contact" type="tel" placeholder="Enter phone number">
+                
+                <div>
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main> 
+
+    <footer class ="footer">
+        <p>Established in 1998. Headquarters at Texas, Dallas.</p>
+    </footer>
+</body>
+</html>
