@@ -59,6 +59,9 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-image: url(resources/signup-bg.png);
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .signup section{
@@ -69,7 +72,13 @@ a {
 .signupform{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+}
+
+.signupform input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
 }
 
 .signupform button{
@@ -79,6 +88,27 @@ a {
     cursor: pointer;
 }
 
+.loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    background: rgb(0,0,25);
+    color: white;
+    border-radius: 15px;
+}
+
+.loginform input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.userhome{
+    background-image: url(resources/userhome-bg.png);
+    background-size: cover;
+    font-size: 20px;
+}
 .profile {
     display: flex;
     justify-content: space-between;
@@ -115,16 +145,18 @@ a {
 
 .left{
     border-right: 1px solid black;
+    text-align: center;
 }
 
 .right{
     border-left: 1px solid black;
+    text-align: center;
 }
 
 .highlight-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: stretch;
     margin: 5px;
 }
 
@@ -138,7 +170,7 @@ a {
 }
 
 .highlight-card img{
-    height: 100%;
+    height: auto;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 5px;
@@ -154,6 +186,7 @@ a {
     border: 2px solid black;
     margin: 10px;
     padding: 15px;
+    background-color: rgb(188, 188, 188);
 }
 
 .info-tabs {
@@ -188,9 +221,22 @@ a {
     text-align: left;
 }
 
-.contact{
+.mainpart{
+    background-image: url(resources/company.png); 
+    background-size: 100% 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    position: fixed;
+    right: 200px;
+    background-color: rgba(0, 0, 25, 0.9);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
 }
 
 .contact img{
@@ -201,5 +247,5 @@ a {
 
 .contact-info, .contact-info a {
     padding: 10px;
-    color: black;
+    color: white
 }
