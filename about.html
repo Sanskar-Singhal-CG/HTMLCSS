@@ -25,49 +25,99 @@
             <div class="about-card">
                 <img src="resources/prof4.png" alt="Sanskar Singhal">
                 <h3>Sanskar Singhal</h3>
-                <span class="about-role">Fullstack Developer</span>
-                <p>Intern at CG Infinity</p>
+                <button class="about-toggle-btn" onclick="toggleCard(this)">View More Info</button>
+                <div class="about-card-details">
+                    <span class="about-role">Fullstack Developer</span>
+                    <div class="about-stack">
+                        <span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>MongoDB</span>
+                    </div>
+                    <p>Intern at CG Infinity. Builds end-to-end web applications with a focus on clean UI and scalable backends.</p>
+                </div>
             </div>
             <div class="about-card">
                 <img src="resources/prof6.png" alt="Tanishq Verma" style="object-position: top;">
                 <h3>Tanishq Verma</h3>
-                <span class="about-role">AI Engineer</span>
-                <p>Intern at CG Infinity</p>
+                <button class="about-toggle-btn" onclick="toggleCard(this)">View More Info</button>
+                <div class="about-card-details">
+                    <span class="about-role">AI Engineer</span>
+                    <div class="about-stack">
+                        <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>NLP</span><span>Scikit-learn</span>
+                    </div>
+                    <p>Intern at CG Infinity. Specializes in training and deploying ML models for real-world applications.</p>
+                </div>
             </div>
             <div class="about-card">
                 <img src="resources/prof1.png" alt="Prabhakar Lal">
                 <h3>Prabhakar Lal</h3>
-                <span class="about-role">Fullstack Developer</span>
-                <p>Intern at CG Infinity</p>
+                <button class="about-toggle-btn" onclick="toggleCard(this)">View More Info</button>
+                <div class="about-card-details">
+                    <span class="about-role">Fullstack Developer</span>
+                    <div class="about-stack">
+                        <span>HTML/CSS</span><span>JavaScript</span><span>Vue.js</span><span>Express</span><span>PostgreSQL</span>
+                    </div>
+                    <p>Intern at CG Infinity. Passionate about building responsive interfaces and RESTful APIs.</p>
+                </div>
             </div>
             <div class="about-card">
                 <img src="resources/prof3.png" alt="Shaurya Dhingra">
                 <h3>Shaurya Dhingra</h3>
-                <span class="about-role">AI Engineer</span>
-                <p>Intern at CG Infinity</p>
+                <button class="about-toggle-btn" onclick="toggleCard(this)">View More Info</button>
+                <div class="about-card-details">
+                    <span class="about-role">AI Engineer</span>
+                    <div class="about-stack">
+                        <span>Python</span><span>OpenCV</span><span>Keras</span><span>LangChain</span><span>RAG</span>
+                    </div>
+                    <p>Intern at CG Infinity. Focused on computer vision and LLM-powered automation pipelines.</p>
+                </div>
             </div>
             <div class="about-card">
                 <img src="resources/prof5.png" alt="Richa Bharti">
                 <h3>Richa Bharti</h3>
-                <span class="about-role">Fullstack Developer</span>
-                <p>Intern at CG Infinity</p>
+                <button class="about-toggle-btn" onclick="toggleCard(this)">View More Info</button>
+                <div class="about-card-details">
+                    <span class="about-role">Fullstack Developer</span>
+                    <div class="about-stack">
+                        <span>HTML/CSS</span><span>React</span><span>TypeScript</span><span>Firebase</span><span>REST APIs</span>
+                    </div>
+                    <p>Intern at CG Infinity. Designs accessible, mobile-first web experiences with modern frameworks.</p>
+                </div>
             </div>
             <div class="about-card">
                 <img src="resources/prof2.png" alt="Preeti Darshini">
                 <h3>Preeti Darshini</h3>
-                <span class="about-role">AI Engineer</span>
-                <p>Intern at CG Infinity</p>
+                <button class="about-toggle-btn" onclick="toggleCard(this)">View More Info</button>
+                <div class="about-card-details">
+                    <span class="about-role">AI Engineer</span>
+                    <div class="about-stack">
+                        <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Hugging Face</span><span>SQL</span>
+                    </div>
+                    <p>Intern at CG Infinity. Works on data analysis pipelines and fine-tuning transformer models.</p>
+                </div>
             </div>
             <div class="about-card">
                 <img src="resources/prof7.png" alt="Tanisha Sharma">
                 <h3>Tanisha Sharma</h3>
-                <span class="about-role">Fullstack Developer</span>
-                <p>Intern at CG Infinity</p>
+                <button class="about-toggle-btn" onclick="toggleCard(this)">View More Info</button>
+                <div class="about-card-details">
+                    <span class="about-role">Fullstack Developer</span>
+                    <div class="about-stack">
+                        <span>HTML/CSS</span><span>JavaScript</span><span>Next.js</span><span>Tailwind</span><span>MySQL</span>
+                    </div>
+                    <p>Intern at CG Infinity. Builds performant full-stack apps with a strong eye for design and UX.</p>
+                </div>
             </div>
         </div>
     </main>
     <footer class ="footer">
         <p>Established in 1998. Headquarters at Texas, Dallas.</p>
     </footer>
+
+    <script>
+        function toggleCard(btn) {
+            const details = btn.nextElementSibling;
+            const expanded = details.classList.toggle('show');
+            btn.textContent = expanded ? 'Show Less' : 'View More Info';
+        }
+    </script>
 </body>
 </html>
